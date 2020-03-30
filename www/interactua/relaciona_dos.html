@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--  <link rel="stylesheet" href="\css\estilos.css">-->
+  <link rel="stylesheet" href="../css/modulos.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+<!-- nuevo-->
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../interactua/css/showToolTip.css">
+  <link rel="stylesheet" href="../interactua/css/showToolTip_inco.css">
+   
+
+    <title>relaciona</title>
+    
+
+<!--neuvo-->
+</head>
+<body class="bg-info"> 
+
+
+
+
+
+
+
+         
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div>
+        <center><h3>En el supermercado</h3></center>
+        <center>
+          <img src="../interactua/imagenes de interactura_relaciona/secuencia_2/1.PNG" alt="">
+          <img src="../interactua/imagenes de interactura_relaciona/secuencia_2/2.PNG" alt="">
+          <img src="../interactua/imagenes de interactura_relaciona/secuencia_2/3.PNG" alt="">
+          <img src="../interactua/imagenes de interactura_relaciona/secuencia_2/4.PNG" alt="">
+  
+        </center>
+
+    </div>
+ 
+    <center><h5>¿Como se sentirá mamá?</h5></center>
+ 
+    <div   >
+      <center><H5 id="text">Enfadada</H5></center>
+        <img src="../interactua/imagenes de interactura_relaciona/secuencia_2/enfadada.PNG" class="rounded mx-auto d-block "  alt="" onclick="config()"  >
+        <center>  <button class="btn btn-warning" id="activate">molesta</button></center>
+
+
+
+
+
+      <center><H5 class="text">Feliz</H5></center>
+        <img id="sorprendido" src="../interactua/imagenes de interactura_relaciona/secuencia_2/feliz.PNG" class="rounded mx-auto d-block" alt="" >
+        <center> <button onclick="sonido.play()" class="activate btn btn-warning">feliz</button></center>
+      
+
+
+
+
+
+       
+       
+    </div>
+
+
+
+    
+    <script src="../javascript/jquery-3.4.1.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../interactua/js/showToolTip.js"></script>
+    <script src="../interactua/js/main.js"></script>
+    <script>
+      $('.activate').click(function () {
+      $('.text').showToolTip({
+        title: 'CORRECTO',
+        content: 'Muy bien',
+        onApprove: function(){
+          console.log('OK is clicked!');
+        }
+      });
+    });
+  </script>
+  </div>
+  <script type="text/javascript">
+  
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  
+  </script>
+
+  <!--MAIN.JS-->
+ 
+  <script>
+    var sonido= new Audio();
+           sonido.src="correcto.mp3";
+     </script>
+
+    
+</body>
+</html>
