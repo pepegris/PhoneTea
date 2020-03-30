@@ -7,9 +7,10 @@
         <param name="browser-package" value="Device" />
     </feature>
     <name>phonegap_tea</name>
-    <description>Hello World sample application that responds to the deviceready event.</description>
-    <author email="support@phonegap.com" href="http://phonegap.com">PhoneGap Team</author>
+    <description>BETA Aplicacion didactica para niños autistas</description>
+    <author email="salcedop816@gmail.com" href="https://github.com/">Edgar Andres Salcedo</author>
     <content src="index.html" />
+    <icon src="rompecabezas.png" />
     <preference name="DisallowOverscroll" value="true" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
