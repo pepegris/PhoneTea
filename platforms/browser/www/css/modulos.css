@@ -5,6 +5,7 @@ html, body {
   }
   body{
     background: url("../img/fondo_app.jpg") center;
+    margin: auto;
   }
 
   * {
@@ -43,4 +44,15 @@ html, body {
   .slick-current {
     opacity: 1;
   }
-  
+
+
+  #respuesta_1{
+    float: left;
+    margin-left: 45px;
+  }
+  /* BUTTON DE SALIR DEL MODULO DE RELACIONA*/
+#salir{
+ 
+  margin-top: 80PX;
+  width: 50%;  
+}

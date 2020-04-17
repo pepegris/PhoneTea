@@ -11,7 +11,8 @@ body{
   align-items: center;
   /*  background: linear-gradient(25deg,#191970, #00BFFF);*/
 
-  background: url("../img/fondo_2.jpg") center  repeat;
+  background: url("../img/fondo_2.jpg") center  no-repeat;
+  margin:auto ;
 }
 
 .menu{
@@ -23,6 +24,9 @@ body{
     max-width: 250px;
     width: 100%;
     position: relative;
+}
+video{
+    
 }
 
 .item{
@@ -38,6 +42,9 @@ body{
     color: black;
     font-family:'Fredoka One', cursive;
     display: block;
+}
+a{
+    font-family:'Fredoka One', cursive; 
 }
 
 .back-menu{
@@ -67,6 +74,10 @@ body{
 .item:nth-of-type(4):hover ~ .back-menu{
     transform: translateY(calc(100% * 3));
 }
+.item:nth-of-type(5):hover ~ .back-menu{
+    transform: translateY(calc(100% * 4));
+}
+
 
 
 .button {
@@ -87,3 +98,5 @@ body{
  box-shadow: 0 5px #666;
  transform: translateY(4px);
   }
+
+  
