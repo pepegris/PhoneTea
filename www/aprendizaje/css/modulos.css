@@ -4,7 +4,7 @@ html, body {
  
   }
   body{
-    background: url("../img/fondo_app.jpg") center;
+    background: url("../fondo_app.jpg") center;
     background-size: cover;
     margin: auto;
   }
