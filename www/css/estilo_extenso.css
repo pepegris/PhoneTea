@@ -79,6 +79,26 @@ a{
     transform: translateY(calc(100% * 4));
 }
 
+.item:nth-of-type(6):hover ~ .back-menu{
+    transform: translateY(calc(100% * 5));
+}
+.item:nth-of-type(7):hover ~ .back-menu{
+    transform: translateY(calc(100% * 6));
+}
+
+.item:nth-of-type(8):hover ~ .back-menu{
+    transform: translateY(calc(100% * 7));
+}
+.item:nth-of-type(9):hover ~ .back-menu{
+    transform: translateY(calc(100% * 8));
+}
+
+.item:nth-of-type(10):hover ~ .back-menu{
+    transform: translateY(calc(100% * 9));
+}
+
+
+
 
 
 .button {

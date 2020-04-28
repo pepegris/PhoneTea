@@ -12,6 +12,7 @@ body{
   /*  background: linear-gradient(25deg,#191970, #00BFFF);*/
 
   background: url("../img/fondo_2.jpg") center  no-repeat;
+  background-size: cover;
   margin:auto ;
 }
 

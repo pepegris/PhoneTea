@@ -4,13 +4,21 @@ html, body {
  
   }
   body{
-    background: url("../img/fondo_app.jpg") center;
+    background: url("/www/img/fondo_app.jpg") center;
+    background-size: cover;
     margin: auto;
   }
 
   * {
     box-sizing: border-box;
  
+  }
+
+  /*TITULO*/
+
+  h1{
+    font-weight: bold;
+    text-decoration: underline;
   }
 
   .slider {

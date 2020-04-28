@@ -3,8 +3,8 @@
 <head>
   <title>Animales</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../css/slick.css">
-  <link rel="stylesheet" type="text/css" href="../css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="../aprendizaje/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="../aprendizaje/css/slick-theme.css">
   <link rel="stylesheet" href="../css/modulos.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
@@ -16,10 +16,10 @@
 </head>
 <body class="bg-info">
  
-
+<center><h1>Animales</h1></center>
   <section class="lazy slider" data-sizes="50vw"> 
     <div >
-      <img id="playpausebtn" data-lazy="../imagenes/1/buho.jpg" data-srcset="../imagenes/1/buho.jpg 650w, ../imagenes/1/buho.jpg 160w" >
+      <img id="playpausebtn" data-lazy="../aprendizaje/img/img_animales/buho.jpg" data-srcset="../aprendizaje/img/img_animales/buho.jpg 650w, ../aprendizaje/img/img_animales/buho.jpg 160w" >
      <center>
        <br>
        <h2 class="btn btn-success" onclick="sonido.play()"><b>Buho</b></h2>
@@ -30,14 +30,14 @@
    
     </div>
     <div>
-      <img data-lazy="../imagenes/1/cerdo.jpg" data-srcset="../imagenes/1/cerdo.jpg 650w, ../imagenes/1/cerdo.jpg 960w" data-sizes="100vw"  >
+      <img data-lazy="../aprendizaje/img/img_animales/cerdo.jpg" data-srcset="../aprendizaje/img/img_animales/cerdo.jpg 650w, ../aprendizaje/img/img_animales/cerdo.jpg 960w" data-sizes="100vw"  >
       <center>
         <br>
         <h2 class="btn btn-success"  onclick="sonido_2.play()"><b>Cerdo</b></h2>
       </center>
     </div>
     <div> 
-      <img data-lazy="../imagenes/1/conejo.jpg"   data-srcset=" ../imagenes/1/conejo.jpg 650w,../imagenes/1/conejo.jpg  960w" data-sizes="100vw">
+      <img data-lazy="../aprendizaje/img/img_animales/conejo.jpg"   data-srcset=" ../aprendizaje/img/img_animales/conejo.jpg 650w,../aprendizaje/img/img_animales/conejo.jpg  960w" data-sizes="100vw">
       <center>
         <br>
         <h2 class="btn btn-success" onclick="sonido_6.play()"><b>Conejo</b></h2>
@@ -45,14 +45,14 @@
       </center>
     </div>
     <div>
-      <img data-lazy="../imagenes/1/perrito.jpg"  data-srcset=" ../imagenes/1/perrito.jpg 650w, ../imagenes/1/perrito.jpg 960w" data-sizes="100vw">
+      <img data-lazy="../aprendizaje/img/img_animales/perrito.jpg"  data-srcset=" ../aprendizaje/img/img_animales/perrito.jpg 650w, ../aprendizaje/img/img_animales/perrito.jpg 960w" data-sizes="100vw">
       <center>
         <br>
         <h2 class="btn btn-success" onclick="sonido_4.play()"><B>perro</B></h2>
       </center>
     </div>
     <div>
-      <img data-lazy="../imagenes/1/foca.jpg"  data-srcset="../imagenes/1/foca.jpg 650w, ../imagenes/1/foca.jpg 960w" data-sizes="100vw">
+      <img data-lazy="../aprendizaje/img/img_animales/foca.jpg"  data-srcset="../aprendizaje/img/img_animales/foca.jpg 650w, ../aprendizaje/img/img_animales/foca.jpg 960w" data-sizes="100vw">
       <center>
         <br>
         <h2 class="btn btn-success" onclick="sonido_3.play()"><b>Foca</b></h2>
@@ -60,7 +60,7 @@
     </div>
     <div>
       <!-- esta slide  debe heredar los tamaños attr del slider principal -->
-      <img data-lazy="../imagenes/1/rinoceronte_opt.jpg"  data-srcset="../imagenes/1/rinoceronte_opt.jpg 650w, ../imagenes/1/rinoceronte_opt.jpg 960w">
+      <img data-lazy="../aprendizaje/img/img_animales/rinoceronte_opt.jpg"  data-srcset="../aprendizaje/img/img_animales/rinoceronte_opt.jpg 650w, ../aprendizaje/img/img_animales/rinoceronte_opt.jpg 960w">
       <center>
         <br>
         <h2 class="btn btn-success" onclick="sonido_5.play()"><b>Rinoceronte</b></h2>
@@ -69,7 +69,7 @@
   </section>
   <br>
   <div class="salida">
-    <center><button type="button" class="btn btn-light" id="boton_exit" onclick="location.href='amarillo.html'" ><h3>  Siguiente </h3></button></center>
+    <center><button type="button" class="btn btn-light" id="boton_exit" onclick="location.href='../www/aprendizaje/comida.html'" ><h3>  Siguiente </h3></button></center>
     <br>
     <center><button type="button" class="btn btn-light" id="boton_exit" onClick="history.back()" ><h3>  Salir  </h3></button></center>
   </div>
@@ -188,24 +188,24 @@
 
 <script>
     var sonido= new Audio();
-        sonido.src="buho.mp3";
+        sonido.src="../aprendizaje/sonidos/animales/buho.mp3";
 
         
         var sonido_2= new Audio();
-        sonido_2.src="cerdo.mp3";
+        sonido_2.src="../aprendizaje/sonidos/animales/cerdo.mp3";
         
         var sonido_3= new Audio();
-        sonido_3.src="foca.mp3";
+        sonido_3.src="../aprendizaje/sonidos/animales/foca.mp3";
 
         var sonido_4= new Audio();
-        sonido_4.src="perro.mp3";
+        sonido_4.src="../aprendizaje/sonidos/animales/perro.mp3";
 
         var sonido_5= new Audio();
-        sonido_5.src="rinoceronte.mp3";
+        sonido_5.src="../aprendizaje/sonidos/animales/rinoceronte.mp3";
 
         
         var sonido_6= new Audio();
-        sonido_6.src="conejo.mp3";
+        sonido_6.src="../aprendizaje/sonidos/animales/conejo.mp3";
 </script>
 </body>
 </html>
