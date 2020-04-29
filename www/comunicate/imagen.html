@@ -1,0 +1,79 @@
+
+ 
+     
+
+<main id="contenedor" class="contenedor">
+    <img id="feliz"  src="/www/comunicate/img/feliz.png" alt="">
+    <img id="triste"  src="/www/comunicate/img/triste.png" alt="">
+    <img id="asustado"  src="/www/comunicate/img/asustado.png" alt="">
+    <img id="duele"  src="/www/comunicate/img/duele.png" alt="">
+    <img id="enfadado"  src="/www/comunicate/img/enfadado.png" alt="">
+</main>
+
+<div class="botones">
+    <input id="reproducir"  type="button" value="Comunicar" class="btn btn-success">
+ 
+</div>
+
+
+<script>
+    
+
+
+
+    $(document).ready(function () {
+      $('#feliz').click(function (event) {
+        $('#pantalla_dos').replaceWith("<img id='nueva_feliz' src='/www/comunicate/img/feliz.png' >");       
+
+        })
+
+        $('#triste').click(function (event) {
+        $('#pantalla_dos').replaceWith("<img id='nueva_triste' src='/www/comunicate/img/triste.png' >");       
+
+        })
+        $('#asustado').click(function (event) {
+        $('#pantalla_dos').replaceWith("<img id='nueva_asustado' src='/www/comunicate/img/asustado.png' >");       
+
+        })
+        $('#duele').click(function (event) {
+        $('#pantalla_dos').replaceWith("<img id='nueva_duele' src='/www/comunicate/img/duele.png' >");       
+
+        })
+        $('#enfadado').click(function (event) {
+        $('#pantalla_dos').replaceWith("<img id='nueva_enfadado' src='/www/comunicate/img/enfadado.png' >");       
+
+        })
+
+
+        var feliz=document.getElementById('feliz');
+        var triste=document.getElementById('triste');
+        var asustado=document.getElementById('asustado');
+        var duele=document.getElementById('duele');
+        var enfadado=document.getElementById('enfadado');
+
+        var reproductor;
+
+        feliz.click=function(){
+            reproductor=feliz;
+            reproducir();
+
+        }
+        
+        f
+
+
+
+
+
+      
+  });  
+
+
+
+       
+
+
+
+
+
+</script>
