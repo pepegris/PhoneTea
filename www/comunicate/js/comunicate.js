@@ -26,10 +26,10 @@
 
 
 
-
-
-
-
+/*  *******************************************
+*                         
+*                    //EMOCIONES//
+**********************************************/
     document.getElementById('emociones').addEventListener('click',add_imagen,false);
     /* document.getElementById('emociones').addEventListener('click',modificar_imagen,false); */
 
@@ -37,7 +37,7 @@
 
         function add_imagen(){
 
-            $('#pantalla_uno').replaceWith("<img id='nueva_primera' src='/www/comunicate/img/emociones.jpg' >");
+            $('#pantalla_uno').replaceWith("<img id='nueva_primera' src='../comunicate/img/emociones.jpg' >");
 
         }
 
@@ -49,6 +49,99 @@
               
           })
       });
+
+      /*  *******************************************
+        *                         
+        *                    /ME GUSTA//
+        **********************************************/
+ document.getElementById('gusta').addEventListener('click',add_imagen_gusta,false);
+
+
+
+    function add_imagen_gusta(){
+
+        $('#pantalla_uno').replaceWith("<img id='nueva_primera' src='../comunicate/img/megusta/megusta1.jpg' >");
+
+    }
+
+
+    $(document).ready(function () {
+      $('#gusta').click(function () {
+
+          $('#contenedor').load('opciones.html')
+          
+      })
+  }); 
+      /*  *******************************************
+        *                         
+        *                    /NO ME GUSTA//
+        **********************************************/
+ document.getElementById('noGusta').addEventListener('click',add_imagen_no_gusta,false);
+
+
+
+ function add_imagen_no_gusta(){
+
+     $('#pantalla_uno').replaceWith("<img id='nueva_primera' src='../comunicate/img/nomegusta/nomegusta.jpg' >");
+
+ }
+
+
+ $(document).ready(function () {
+   $('#noGusta').click(function () {
+
+       $('#contenedor').load('opciones.html')
+       
+   })
+}); 
+
+      /*  *******************************************
+        *                         
+        *                    /QUIERO//
+        **********************************************/
+document.getElementById('quiero').addEventListener('click',add_imagen_quiero,false);
+
+
+
+function add_imagen_quiero(){
+
+    $('#pantalla_uno').replaceWith("<img id='nueva_primera' src='../comunicate/img/quiero.png' >");
+
+}
+
+
+$(document).ready(function () {
+  $('#quiero').click(function () {
+
+      $('#contenedor').load('opciones.html')
+      
+  })
+}); 
+
+
+      /*  *******************************************
+        *                         
+        *                    /NO QUIERO//
+        **********************************************/
+document.getElementById('noQuiero').addEventListener('click',add_imagen_no_quiero,false);
+
+
+
+function add_imagen_no_quiero(){
+
+    $('#pantalla_uno').replaceWith("<img id='nueva_primera' src='../comunicate/img/no quiero.png' >");
+
+}
+
+
+$(document).ready(function () {
+  $('#noQuiero').click(function () {
+
+      $('#contenedor').load('opciones.html')
+      
+  })
+}); 
+      
 
 
 

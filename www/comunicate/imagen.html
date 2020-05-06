@@ -45,28 +45,105 @@
         })
 
 
-        var feliz=document.getElementById('feliz');
-        var triste=document.getElementById('triste');
-        var asustado=document.getElementById('asustado');
-        var duele=document.getElementById('duele');
-        var enfadado=document.getElementById('enfadado');
-
-        var reproductor;
-
-        feliz.click=function(){
-            reproductor=feliz;
-            reproducir();
-
-        }
-        
-        f
 
 
 
 
 
       
-  });  
+  }); 
+  
+  var feliz=document.getElementById('feliz');
+        var triste=document.getElementById('triste');
+        var asustado=document.getElementById('asustado');
+        var duele=document.getElementById('duele');
+        var enfadado=document.getElementById('enfadado');
+
+        var reproducir=document.getElementById('reproducir')
+
+      
+
+        var emocion;
+
+        feliz.onclick=function(){
+
+            emocion=1
+
+        }
+        triste.onclick=function(){
+
+            emocion=2
+
+        }
+
+        asustado.onclick=function(){
+
+            emocion=3
+
+        }
+        duele.onclick=function(){
+
+            emocion=4
+
+        }
+        enfadado.onclick=function(){
+
+            emocion=5
+
+        }
+        reproducir.onclick=function(){
+            play()
+        }
+
+
+
+
+
+function play() {
+
+    var feliz= new Audio();
+        feliz.src="../comunicate/sonidos/feliz.wav";
+        var asustado= new Audio();
+        asustado.src="../comunicate/sonidos/asustado.wav";
+        var dolorido= new Audio();
+        dolorido.src="../comunicate/sonidos/dolorido.wav";
+        var triste= new Audio();
+        triste.src="../comunicate/sonidos/triste.wav";
+        var enfadado= new Audio();
+        enfadado.src="../comunicate/sonidos/enfadado.wav";
+        
+    switch (emocion) {
+        
+                case 1:
+                    feliz.play()
+                
+                    break;
+                    case 2:
+                        triste.play()
+                    
+                    break;
+                    case 3:
+                        asustado.play()
+                   
+                    
+
+                    break;
+                    case 4:
+                        dolorido.play()
+                    
+                
+                    break;
+                    case 5:
+                        enfadado.play()
+                    
+
+                    break;
+            
+                
+            }     
+}
+
+
 
 
 
