@@ -1,0 +1,156 @@
+
+ 
+     
+
+<main id="contenedor" class="contenedor">
+    <img id="feliz"  src="../comunicate/img/feliz.png" alt="">
+    <img id="triste"  src="../comunicate/img/triste.png" alt="">
+    <img id="asustado"  src="../comunicate/img/asustado.png" alt="">
+    <img id="duele"  src="../comunicate/img/duele.png" alt="">
+    <img id="enfadado"  src="../comunicate/img/enfadado.png" alt="">
+</main>
+
+<div class="botones">
+    <input id="reproducir"  type="button" value="Comunicar" class="btn btn-success">
+ 
+</div>
+
+
+<script>
+    
+
+
+
+    $(document).ready(function () {
+      $('#feliz').click(function (event) {
+        $('#pantalla_dos').replaceWith("<img id='nueva_feliz' src='../comunicate/img/feliz.png' >");       
+
+        })
+
+        $('#triste').click(function (event) {
+        $('#pantalla_dos').replaceWith("<img id='nueva_triste' src='../comunicate/img/triste.png' >");       
+
+        })
+        $('#asustado').click(function (event) {
+        $('#pantalla_dos').replaceWith("<img id='nueva_asustado' src='../comunicate/img/asustado.png' >");       
+
+        })
+        $('#duele').click(function (event) {
+        $('#pantalla_dos').replaceWith("<img id='nueva_duele' src='../comunicate/img/duele.png' >");       
+
+        })
+        $('#enfadado').click(function (event) {
+        $('#pantalla_dos').replaceWith("<img id='nueva_enfadado' src='../comunicate/img/enfadado.png' >");       
+
+        })
+
+
+
+
+
+
+
+      
+  }); 
+  
+  var feliz=document.getElementById('feliz');
+        var triste=document.getElementById('triste');
+        var asustado=document.getElementById('asustado');
+        var duele=document.getElementById('duele');
+        var enfadado=document.getElementById('enfadado');
+
+        var reproducir=document.getElementById('reproducir')
+
+      
+
+        var emocion;
+
+        feliz.onclick=function(){
+
+            emocion=1
+
+        }
+        triste.onclick=function(){
+
+            emocion=2
+
+        }
+
+        asustado.onclick=function(){
+
+            emocion=3
+
+        }
+        duele.onclick=function(){
+
+            emocion=4
+
+        }
+        enfadado.onclick=function(){
+
+            emocion=5
+
+        }
+        reproducir.onclick=function(){
+            play()
+        }
+
+
+
+
+
+function play() {
+
+    var feliz= new Audio();
+        feliz.src="../comunicate/sonidos/feliz.wav";
+        var asustado= new Audio();
+        asustado.src="../comunicate/sonidos/asustado.wav";
+        var dolorido= new Audio();
+        dolorido.src="../comunicate/sonidos/dolorido.wav";
+        var triste= new Audio();
+        triste.src="../comunicate/sonidos/triste.wav";
+        var enfadado= new Audio();
+        enfadado.src="../comunicate/sonidos/enfadado.wav";
+        
+    switch (emocion) {
+        
+                case 1:
+                    feliz.play()
+                
+                    break;
+                    case 2:
+                        triste.play()
+                    
+                    break;
+                    case 3:
+                        asustado.play()
+                   
+                    
+
+                    break;
+                    case 4:
+                        dolorido.play()
+                    
+                
+                    break;
+                    case 5:
+                        enfadado.play()
+                    
+
+                    break;
+            
+                
+            }     
+}
+
+
+
+
+
+       
+
+
+
+
+
+</script>

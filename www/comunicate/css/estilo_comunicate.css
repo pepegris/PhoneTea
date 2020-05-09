@@ -30,6 +30,7 @@ body{
 
     border: dashed black;
     margin: 0 5px 15px 5px;
+    font-size: 20px;
 }
 
 #contenedor{
@@ -76,6 +77,6 @@ body{
 
 
 img{
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
 }
