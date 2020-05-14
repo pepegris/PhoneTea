@@ -68,7 +68,7 @@
     $(document).ready(function () {
       $('#gusta').click(function () {
 
-          $('#contenedor').load('opciones.html')
+          $('#contenedor').load('megusta_opciones.html')
           
       })
   }); 

@@ -1,0 +1,140 @@
+
+
+
+<main id="contenedor" class="contenedor">
+    <img id="carrito"  src="../aprendizaje/img/img_juguetes/carrito.jpg" alt="">
+    <img id="celular"  src="../aprendizaje/img/img_juguetes/celular.jpg" alt="">
+    <img id="computadora"  src="../aprendizaje/img/img_juguetes/computadora.jpg" alt="">
+    <img id="crayones"  src="../aprendizaje/img/img_juguetes/crayones.png" alt="">
+    <img id="muñeca"  src="../aprendizaje/img/img_juguetes/muñeca.jpg" alt="">
+    <img id="pelota"  src="../aprendizaje/img/img_juguetes/pelota.jpg" alt="">
+    <img id="tv"  src="../aprendizaje/img/img_juguetes/tv.jpg" alt="">
+
+ 
+</main>
+
+<div class="botones">
+    <input id="reproducir"  type="button" value="Comunicar" class="btn btn-success">
+ 
+</div>
+
+
+<script>
+
+
+
+$(document).ready(function () {
+    var juguete;
+    $('#carrito').click(function(){
+        $('#pantalla_tres').replaceWith("<img id='nueva_feliz' src='../aprendizaje/img/img_juguetes/carrito.jpg' >"); 
+        juguete=1;
+    })
+    $('#celular').click(function(){
+        $('#pantalla_tres').replaceWith("<img id='nueva_feliz' src='../aprendizaje/img/img_juguetes/celular.jpg' >");  
+        juguete=2;
+    })
+    $('#crayones').click(function(){
+        $('#pantalla_tres').replaceWith("<img id='nueva_feliz' src='../aprendizaje/img/img_juguetes/crayones.png' >");
+        juguete=3;
+    })
+    $('#muñeca').click(function(){
+        $('#pantalla_tres').replaceWith("<img id='nueva_feliz' src='../aprendizaje/img/img_juguetes/muñeca.jpg' >");
+        juguete=4;
+    })
+    $('#pelota').click(function(){
+        $('#pantalla_tres').replaceWith("<img id='nueva_feliz' src='../aprendizaje/img/img_juguetes/pelota.jpg' >");
+        juguete=5;
+    })
+    $('#computadora').click(function(){
+        $('#pantalla_tres').replaceWith("<img id='nueva_feliz' src='../aprendizaje/img/img_juguetes/computadora.jpg' >");
+        juguete=6;
+    })
+    $('#tv').click(function(){
+        $('#pantalla_tres').replaceWith("<img id='nueva_feliz' src='../aprendizaje/img/img_juguetes/tv.jpg' >");
+        juguete=7;
+    })
+
+
+
+    $('#reproducir').click(function () {
+
+    $('#contenedor').load('play.html')
+
+    })
+
+        $('#reproducir').click(function(){
+            var carrito= new Audio();
+            carrito.src="../comunicate/sonidos/juguete/carrito.wav";
+          var celular= new Audio();
+            celular.src="../comunicate/sonidos/juguete/celular.wav";
+          var computadora= new Audio();
+            computadora.src="../comunicate/sonidos/juguete/computadora.wav";
+          var crayones= new Audio();
+            crayones.src="../comunicate/sonidos/juguete/crayones.wav";
+            var muneca= new Audio();
+            muneca.src="../comunicate/sonidos/juguete/muneca.wav";
+          var pelota= new Audio();
+            pelota.src="../comunicate/sonidos/juguete/pelota.wav";
+          var tv= new Audio();
+            tv.src="../comunicate/sonidos/juguete/tv.wav";
+
+            switch (juguete) {
+                case 1:
+                    carrito.play()
+                    
+                    break;
+
+                    case 2:
+                        celular.play()
+                    
+                    break;
+
+                    case 3:
+                        computadora.play()
+                    
+                    break;
+
+                    case 4:
+                        crayones.play()
+                    
+                    break;
+
+                    case 5:
+                        muneca.play()
+
+                    
+                    break;
+
+                    case 6:
+                        pelota.play()
+                    
+                    break;
+
+                    case 7:
+
+                        tv.play()
+                    
+                    break;
+            
+                
+            }
+        
+
+        })
+
+
+
+
+
+
+
+});
+
+
+
+
+
+
+
+
+</script>

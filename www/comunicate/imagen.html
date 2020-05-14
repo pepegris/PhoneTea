@@ -22,6 +22,11 @@
 
 
     $(document).ready(function () {
+
+        /****************************************
+         * ANTIGUA OPCIONES PARA EL CAMBIO DE IMAGEN ESTE SOLO REMPLAZABA
+         * 
+         * *****************************************/ 
       $('#feliz').click(function (event) {
         $('#pantalla_dos').replaceWith("<img id='nueva' src='../comunicate/img/feliz.png' >"); 
         
@@ -46,9 +51,39 @@
         $('#enfadado').click(function (event) {
         $('#pantalla_dos').replaceWith("<img id='nueva' src='../comunicate/img/enfadado.png' >");       
 
+        }) 
+
+        $('#reproducir').click(function () {
+
+            $('#contenedor').load('play.html')
+
         })
+/***********************************************************
+ * *
+ * * NUEVA OPCION DE CAMBIO DE CARA ESTE SI PERMITE CAMBIAR LAS CARAS EN TIEMPO REAL
+ * 
+ * **************************************************************/
 
+      /*   $('#feliz').click(function () {
 
+                $('#pantalla_dos').load('../comunicate/opciones de EMOCIONES/feliz.html')
+
+                })
+
+            $('#triste').click(function () {
+
+                   $('#pantalla_dos').load('triste.html')
+
+            })
+
+            
+            $('#asustado').click(function () {
+
+                $('#pantalla_dos').load('asustado.html')
+
+                })
+
+ */
 
 
 

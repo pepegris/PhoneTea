@@ -1,0 +1,118 @@
+
+
+     
+
+<main id="contenedor" class="contenedor">
+    <img id="casa"  src="../aprendizaje/img/img_lugares/casa.jpg" alt="">
+    <img id="escuela"  src="../aprendizaje/img/img_lugares/escuela.png" alt="">
+    <img id="hospital"  src="../aprendizaje/img/img_lugares/hospital.jpg" alt="">
+    <img id="plaza"  src="../aprendizaje/img/img_lugares/plaza.jpg" alt="">
+   
+</main>
+
+<div class="botones">
+    <input id="reproducir"  type="button" value="Comunicar" class="btn btn-success">
+ 
+</div>
+
+<script>
+
+    
+
+
+ 
+$(document).ready(function () {
+
+    var lugar;
+
+    $('#casa').click(function(){
+        $('#pantalla_tres').replaceWith("<img id='nueva_feliz' src='../aprendizaje/img/img_lugares/casa.jpg' >")
+        lugar=1;
+    })
+    $('#escuela').click(function(){
+        $('#pantalla_tres').replaceWith("<img id='nueva_feliz' src='../aprendizaje/img/img_lugares/escuela.png' >")
+        lugar=2;
+    })
+
+    $('#hospital').click(function(){
+        $('#pantalla_tres').replaceWith("<img id='nueva_feliz' src='../aprendizaje/img/img_lugares/hospital.jpg' >")
+        lugar=3;
+    })
+    $('#plaza').click(function(){
+        $('#pantalla_tres').replaceWith("<img id='nueva_feliz' src='../aprendizaje/img/img_lugares/plaza.jpg' >")
+        lugar=4;
+    })
+
+
+
+    $('#reproducir').click(function () {
+
+        $('#contenedor').load('play.html')
+
+    })
+
+
+    $('#reproducir').click(function(){
+        var casa= new Audio();
+            casa.src="../comunicate/sonidos/lugares/casa.wav";
+          var escuela= new Audio();
+            escuela.src="../comunicate/sonidos/lugares/escuela.wav";
+          var hospital= new Audio();
+            hospital.src="../comunicate/sonidos/lugares/hospital.wav";
+          var plaza= new Audio();
+            plaza.src="../comunicate/sonidos/lugares/plaza.wav";
+
+            switch (lugar) {
+                case 1:
+                    casa.play()
+                    
+                    break;
+
+                    case 2:
+                        escuela.play()
+                    
+                    break;
+
+                    case 3:
+                         hospital.play()
+                    
+                    break;
+
+                    case 4:
+                       plaza.play()
+
+                    break;
+            
+                
+            }
+    })
+
+
+
+
+
+
+
+    
+  
+
+
+
+
+
+
+
+      
+  }); 
+ 
+
+
+
+
+
+
+
+       
+
+
+</script>
