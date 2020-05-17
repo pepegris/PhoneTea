@@ -1,0 +1,161 @@
+
+
+     
+
+<main id="contenedor" class="contenedor">
+    <img id='camisa' src='../aprendizaje/img/img_ropa/camisa.jpg' >
+    <img id='chola' src='../aprendizaje/img/img_ropa/chola.jpg' >
+    <img id='medias' src='../aprendizaje/img/img_ropa/medias.png' >
+
+    <img id='pantalon' src='../aprendizaje/img/img_ropa/pantalon.png' >
+    <img id='pijama' src='../aprendizaje/img/img_ropa/pijama.png' >
+    <img id='ropa_interior' src='../aprendizaje/img/img_ropa/ropa_interior.jpg' >
+
+    <img id='sueter' src='../aprendizaje/img/img_ropa/sueter.png' >
+    <img id='zapato' src='../aprendizaje/img/img_ropa/zapato.jpg' >
+
+
+</main>
+
+<div class="botones">
+    <input id="reproducir"  type="button" value="Comunicar" class="btn btn-success">
+ 
+</div>
+
+
+
+<script>
+
+
+
+
+
+   $(document).ready(function () {
+
+    var ropa;
+      $('#camisa').click(function (event) {
+        $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_ropa/camisa.jpg' >");       
+        ropa=1;
+        })
+
+        $('#chola').click(function (event) {
+        $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_ropa/chola.jpg' >");       
+        ropa=2;
+        })
+
+        $('#medias').click(function (event) {
+        $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_ropa/medias.png' >");       
+        ropa=3;
+        })
+       
+        $('#pantalon').click(function (event) {
+        $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_ropa/pantalon.png' >");       
+        ropa=4;
+        })
+
+        $('#pijama').click(function (event) {
+        $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_ropa/pijama.png' >");       
+        ropa=5;
+        })
+
+        
+        $('#ropa_interior').click(function (event) {
+        $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_ropa/ropa_interior.jpg' >");       
+        ropa=6;
+        })
+       
+        $('#sueter').click(function (event) {
+        $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_ropa/sueter.png' >");       
+        ropa=7;
+        })
+        
+        $('#zapato').click(function (event) {
+        $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_ropa/zapato.jpg' >");       
+        ropa=8;
+        })
+
+        $('#reproducir').click(function () {
+
+        $('#contenedor').load('play.html')
+      
+        })
+
+
+
+
+        /* REPDUCION DE SONIDOS  */
+        $('#reproducir').click(function(){
+            
+          var franela= new Audio();
+            franela.src="../comunicate/sonidos/ropa/franela.wav";
+
+          var chancleta= new Audio();
+            chancleta.src="../comunicate/sonidos/ropa/chancleta.wav";
+
+          var medias= new Audio();
+            medias.src="../comunicate/sonidos/ropa/medias.wav";
+
+          var pantalon= new Audio();
+            pantalon.src="../comunicate/sonidos/ropa/pantalon.wav";
+
+            var pijama= new Audio();
+            pijama.src="../comunicate/sonidos/ropa/pijama.wav";
+
+            var interior= new Audio();
+            interior.src="../comunicate/sonidos/ropa/interior.wav";
+
+          var sueter= new Audio();
+            sueter.src="../comunicate/sonidos/ropa/sueter.wav";
+            
+            var zapatos= new Audio();
+            zapatos.src="../comunicate/sonidos/ropa/zapatos.wav";
+       
+
+
+            switch (ropa) {
+                case 1:
+                        franela.play()
+                    break;
+                    case 2:
+                        chancleta.play()
+                    break;
+                    case 3:
+                        medias.play()
+                    break;
+                    case 4:
+                        pantalon.play()
+                    break;
+                    case 5:
+                        pijama.play()
+                    break;
+                    case 6:
+                        interior.play()
+                    break;
+                    case 7:
+                        sueter.play()
+                    break;
+                    case 8:
+                        zapatos.play()
+                    break;
+                  
+            
+               
+            }
+         
+
+
+
+        })
+    
+});
+
+
+
+
+
+
+
+       
+
+
+</script>

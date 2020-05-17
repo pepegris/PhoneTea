@@ -7,9 +7,9 @@
     <img id="beber"  src="../comunicate/img/opciones/beber.jpg" alt="">
     <img id="caminar"  src="../comunicate/img/opciones/caminar.jpg" alt="">
     <img id="jugar"  src="../comunicate/img/opciones/jugar.jpg" alt="">
-    <img id="transporte"  src="../comunicate/img/opciones/transporte.jpg" alt="">
+    <img id="higiene"  src="../comunicate/img/opciones/higiene.jpg" alt="">
     <img id="ropa"  src="../comunicate/img/opciones/ropa.jpg" alt="">
-    <img id="animales"  src="../comunicate/img/opciones/animales.jpg" alt="">
+   <!--  <img id="animales"  src="../comunicate/img/opciones/animales.jpg" alt=""> -->
     <img id="utiles"  src="../comunicate/img/opciones/utiles.png" alt="">
 </main>
 
@@ -80,18 +80,18 @@
         $('#pantalla_dos').replaceWith("<img id='nuevo' src='../comunicate/img/opciones/jugar.jpg' >");       
 
         })
-        $('#transporte').click(function (event) {
-        $('#pantalla_dos').replaceWith("<img id='nuevo' src='../comunicate/img/opciones/transporte.jpg' >");       
+        $('#higiene').click(function (event) {
+        $('#pantalla_dos').replaceWith("<img id='nuevo' src='../comunicate/img/opciones/higiene.jpg' >");       
 
         })
         $('#ropa').click(function (event) {
         $('#pantalla_dos').replaceWith("<img id='nuevo' src='../comunicate/img/opciones/ropa.jpg' >");       
 
         })
-        $('#animales').click(function (event) {
+    /*     $('#animales').click(function (event) {
         $('#pantalla_dos').replaceWith("<img id='nuevo' src='../comunicate/img/opciones/animales.jpg' >");       
 
-        })
+        }) */
         $('#utiles').click(function (event) {
         $('#pantalla_dos').replaceWith("<img id='nuevo' src='../comunicate/img/opciones/utiles.png' >");       
 
@@ -123,15 +123,15 @@
 
                 $('#jugar').click(function () {
 
-                $('#contenedor').load('imagen.html')
+                $('#contenedor').load('megusta_jugar.html')
 
                 })
 
 
 
-                $('#transporte').click(function () {
+                $('#higiene').click(function () {
 
-                $('#contenedor').load('imagen.html')
+                $('#contenedor').load('megusta_higiene.html')
 
                 })
 
@@ -139,17 +139,17 @@
 
                 $('#ropa').click(function () {
 
-                $('#contenedor').load('imagen.html')
+                $('#contenedor').load('megusta_ropa.html')
 
                 })
 
 
-                $('#animales').click(function () {
+         /*        $('#animales').click(function () {
 
                 $('#contenedor').load('imagen.html')
 
                 })
-
+ */
        
 
 
@@ -157,7 +157,7 @@
 
         $('#utiles').click(function () {
 
-         $('#contenedor').load('imagen.html')
+         $('#contenedor').load('megusta_utiles.html')
 
          })
 

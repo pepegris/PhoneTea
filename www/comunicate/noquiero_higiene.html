@@ -1,0 +1,121 @@
+
+
+     
+
+<main id="contenedor" class="contenedor">
+  <img id='bañar' src='../aprendizaje/img/img_higiene/bañar.jpg' >
+  <img id='cepillarse' src='../aprendizaje/img/img_higiene/cepillarse.jpg' >
+<img id='manos' src='../aprendizaje/img/img_higiene/manos.png' >
+
+  <img id='secar' src='../aprendizaje/img/img_higiene/secar.png' >
+  <img id='nariz' src='../aprendizaje/img/img_higiene/nariz.png' >
+
+</main>
+
+<div class="botones">
+  <input id="reproducir"  type="button" value="Comunicar" class="btn btn-success">
+
+</div>
+
+
+
+<script>
+
+
+
+
+
+ $(document).ready(function () {
+
+  var sonidos;
+    $('#bañar').click(function (event) {
+      $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_higiene/bañar.jpg' >");       
+      sonidos=1;
+      })
+
+     
+      $('#cepillarse').click(function (event) {
+      $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_higiene/cepillarse.jpg' >");       
+      sonidos=3;
+      })
+     
+      $('#manos').click(function (event) {
+      $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_higiene/manos.png' >");       
+      sonidos=4;
+      })
+      $('#nariz').click(function (event) {
+      $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_higiene/nariz.png' >");       
+      sonidos=6;
+      })
+      $('#secar').click(function (event) {
+      $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_higiene/secar.png' >");       
+      sonidos=5;
+      })
+
+      $('#reproducir').click(function () {
+
+      $('#contenedor').load('play.html')
+    
+      })
+
+
+
+
+      /* REPDUCION DE SONIDOS  */
+      $('#reproducir').click(function(){
+          
+        var bañar= new Audio();
+          bañar.src="../comunicate/sonidos/higiene/banarnoq.wav";
+ 
+        var cepillarse= new Audio();
+          cepillarse.src="../comunicate/sonidos/higiene/cepillarsenoq.wav";
+        var manos= new Audio();
+          manos.src="../comunicate/sonidos/higiene/manosnoq.wav";
+          var secar= new Audio();
+          secar.src="../comunicate/sonidos/higiene/secarnoq.wav";
+          var nariz= new Audio();
+          nariz.src="../comunicate/sonidos/higiene/nariznoq.wav";
+        /*   var error= new Audio();
+          error.src="../comunicate/sonidos/error.wav"; */
+     
+
+
+          switch (sonidos) {
+              case 1:
+                      bañar.play()
+                  break;
+                
+                  case 3:
+                      cepillarse.play()
+                  break;
+                  case 4:
+                      manos.play()
+                  break;
+                  case 5:
+                      secar.play()
+                  break;
+                  case 6:
+                      nariz.play()
+                  break;
+                
+          
+             
+          }
+       
+
+
+
+      })
+  
+});
+
+
+
+
+
+
+
+     
+
+
+</script>

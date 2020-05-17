@@ -1,0 +1,104 @@
+
+
+
+<main id="contenedor" class="contenedor">
+    <img id="agua"  src="../aprendizaje/img/img_bebidas/agua.jpg" alt="">
+    <img id="jugo"  src="../aprendizaje/img/img_bebidas/jugo.png" alt="">
+    <img id="leche"  src="../aprendizaje/img/img_bebidas/leche.png" alt="">
+    <img id="refresco"  src="../aprendizaje/img/img_bebidas/refresco.png" alt="">
+
+ 
+</main>
+
+<div class="botones">
+    <input id="reproducir"  type="button" value="Comunicar" class="btn btn-success">
+ 
+</div>
+
+<script>
+
+     
+
+
+
+$(document).ready(function () {
+    var beber;
+
+    $('#agua').click(function (event) {
+        beber=1;
+        $('#pantalla_tres').replaceWith("<img id='nueva_feliz' src='../aprendizaje/img/img_bebidas/agua.jpg' >");       
+
+        })
+        $('#jugo').click(function (event) {
+        beber=2;
+        $('#pantalla_tres').replaceWith("<img id='nueva_feliz' src='../aprendizaje/img/img_bebidas/jugo.png' >");       
+
+        })
+
+        $('#leche').click(function (event) {
+        beber=3;
+        $('#pantalla_tres').replaceWith("<img id='nueva_feliz' src='../aprendizaje/img/img_bebidas/leche.png' >");       
+
+        })
+
+        $('#refresco').click(function (event) {
+        beber=4;
+        $('#pantalla_tres').replaceWith("<img id='nueva_feliz' src='../aprendizaje/img/img_bebidas/refresco.png' >");       
+
+        })
+
+        $('#reproducir').click(function () {
+
+        $('#contenedor').load('play.html')
+
+        })
+
+
+
+
+        /* REPDUCION DE SONIDOS  */
+        $('#reproducir').click(function(){
+            
+          var agua= new Audio();
+            agua.src="../comunicate/sonidos/beber/aguaq.wav";
+          var jugo= new Audio();
+            jugo.src="../comunicate/sonidos/beber/jugoq.wav";
+          var leche= new Audio();
+            leche.src="../comunicate/sonidos/beber/lecheq.wav";
+          var refresco= new Audio();
+            refresco.src="../comunicate/sonidos/beber/refrescoq.wav";
+
+            switch (beber) {
+                case 1:
+                        agua.play()
+                    break;
+                    case 2:
+                        jugo.play()
+                    break;
+                    case 3:
+                        leche.play()
+                    break;
+                    case 4:
+                        refresco.play()
+                    break;
+            
+               
+            }
+         
+
+
+
+        })
+    
+});
+
+
+
+
+
+
+
+       
+
+
+</script>

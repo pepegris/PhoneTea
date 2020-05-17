@@ -90,7 +90,7 @@
  $(document).ready(function () {
    $('#noGusta').click(function () {
 
-       $('#contenedor').load('opciones.html')
+       $('#contenedor').load('nogusta_Opciones.html')
        
    })
 }); 
@@ -113,7 +113,7 @@ function add_imagen_quiero(){
 $(document).ready(function () {
   $('#quiero').click(function () {
 
-      $('#contenedor').load('opciones.html')
+      $('#contenedor').load('quiero_opciones.html')
       
   })
 }); 
@@ -137,7 +137,7 @@ function add_imagen_no_quiero(){
 $(document).ready(function () {
   $('#noQuiero').click(function () {
 
-      $('#contenedor').load('opciones.html')
+      $('#contenedor').load('noquiero_opciones.html')
       
   })
 }); 
