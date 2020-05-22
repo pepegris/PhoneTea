@@ -1,0 +1,201 @@
+
+
+     
+
+<main id="contenedor" class="contenedor">
+    <img id="casa"  src="../aprendizaje/img/img_lugares/casa.jpg" alt="">
+    <img id="escuela"  src="../aprendizaje/img/img_lugares/escuela.png" alt="">
+    <img id="hospital"  src="../aprendizaje/img/img_lugares/hospital.jpg" alt="">
+
+    <img id="plaza"  src="../aprendizaje/img/img_lugares/plaza.jpg" alt="">
+    <img id='autobus' src='../aprendizaje/img/img_transporte/autobus.png' >
+    <img id='bicicleta' src='../aprendizaje/img/img_transporte/bicicleta.jpg' >
+
+    <img id='carro' src='../aprendizaje/img/img_transporte/carro.jpg' >
+    <img id='motocicleta' src='../aprendizaje/img/img_transporte/motocicleta.jpg' >
+    <img id='taxi' src='../aprendizaje/img/img_transporte/taxi.jpg' >
+
+    <img id='baño' src='../aprendizaje/img/img_higiene/baño.png' >
+   
+</main>
+
+<div class="botones">
+    <input id="reproducir"  type="button" value="Comunicar" class="btn btn-success">
+ 
+</div>
+
+<script>
+
+    
+
+
+ 
+$(document).ready(function () {
+
+    var sonidos;
+
+    //  LUGARES!!!!
+
+    $('#casa').click(function(){
+        $('#pantalla_tres').replaceWith("<img id='nueva_feliz' src='../aprendizaje/img/img_lugares/casa.jpg' >")
+        sonidos=1;
+    })
+    $('#escuela').click(function(){
+        $('#pantalla_tres').replaceWith("<img id='nueva_feliz' src='../aprendizaje/img/img_lugares/escuela.png' >")
+        sonidos=2;
+    })
+
+    $('#hospital').click(function(){
+        $('#pantalla_tres').replaceWith("<img id='nueva_feliz' src='../aprendizaje/img/img_lugares/hospital.jpg' >")
+        sonidos=3;
+    })
+    $('#plaza').click(function(){
+        $('#pantalla_tres').replaceWith("<img id='nueva_feliz' src='../aprendizaje/img/img_lugares/plaza.jpg' >")
+       sonidos=4;
+    })
+
+    //  TRANSPORTE!!!!
+
+    $('#autobus').click(function (event) {
+        $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_transporte/autobus.png' >");       
+        sonidos=5;
+        })
+
+        $('#bicicleta').click(function (event) {
+        $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_transporte/bicicleta.jpg' >");       
+        sonidos=6;
+        })
+        $('#carro').click(function (event) {
+        $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_transporte/carro.jpg' >");       
+        sonidos=7;
+        })
+       
+        $('#motocicleta').click(function (event) {
+        $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_transporte/motocicleta.jpg' >");       
+        sonidos=8;
+        })
+        $('#taxi').click(function (event) {
+        $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_transporte/taxi.jpg' >");       
+       sonidos=9;
+        })
+        //BAÑO
+        $('#baño').click(function (event) {
+        $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_higiene/baño.png' >");       
+       sonidos=10;
+        })
+
+
+
+    $('#reproducir').click(function () {
+
+        $('#contenedor').load('play.html')
+
+    })
+
+
+    $('#reproducir').click(function(){
+
+        //lugares
+        var casa= new Audio();
+            casa.src="../comunicate/sonidos/lugares/casa.wav";
+          var escuela= new Audio();
+            escuela.src="../comunicate/sonidos/lugares/escuela.wav";
+          var hospital= new Audio();
+            hospital.src="../comunicate/sonidos/lugares/hospital.wav";
+          var plaza= new Audio();
+            plaza.src="../comunicate/sonidos/lugares/plaza.wav";
+
+            //transporte
+
+            var autobus= new Audio();
+            autobus.src="../comunicate/sonidos/transporte/autobus.wav";
+          var bicicleta= new Audio();
+            bicicleta.src="../comunicate/sonidos/transporte/bicicleta.wav";
+          var carro= new Audio();
+            carro.src="../comunicate/sonidos/transporte/carro.wav";
+          var moto= new Audio();
+            moto.src="../comunicate/sonidos/transporte/moto.wav";
+            var taxi= new Audio();
+            taxi.src="../comunicate/sonidos/transporte/taxi.wav";
+
+            //baño
+            var bano=new Audio();
+            bano.src="../comunicate/sonidos/higiene/bano.wav"
+
+            switch (sonidos) {
+
+                //lugares
+                case 1:
+                    casa.play()
+                    
+                    break;
+
+                    case 2:
+                        escuela.play()
+                    
+                    break;
+
+                    case 3:
+                         hospital.play()
+                    
+                    break;
+
+                    case 4:
+                       plaza.play()
+
+                    break;
+                //transporte
+
+                case 5:
+                        autobus.play()
+                    break;
+                    case 6:
+                        bicicleta.play()
+                    break;
+                    case 7:
+                        carro.play()
+                    break;
+                    case 8:
+                        moto.play()
+                    break;
+                    case 9:
+                        taxi.play()
+                    break;
+                    case 10:
+                        bano.play()
+                    break;
+
+
+                
+            }
+    })
+
+
+
+
+
+
+
+    
+  
+
+
+
+
+
+
+
+      
+  }); 
+ 
+
+
+
+
+
+
+
+       
+
+
+</script>

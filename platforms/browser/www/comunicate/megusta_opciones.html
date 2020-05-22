@@ -1,0 +1,184 @@
+
+ 
+     
+
+<main id="contenedor" class="contenedor">
+    <img id="comer"  src="../comunicate/img/opciones/comer.jpg" alt="">
+    <img id="beber"  src="../comunicate/img/opciones/beber.jpg" alt="">
+    <img id="caminar"  src="../comunicate/img/opciones/caminar.jpg" alt="">
+    <img id="jugar"  src="../comunicate/img/opciones/jugar.jpg" alt="">
+    <img id="higiene"  src="../comunicate/img/opciones/higiene.jpg" alt="">
+    <img id="ropa"  src="../comunicate/img/opciones/ropa.jpg" alt="">
+   <!--  <img id="animales"  src="../comunicate/img/opciones/animales.jpg" alt=""> -->
+    <img id="utiles"  src="../comunicate/img/opciones/utiles.png" alt="">
+</main>
+
+
+
+
+<script>
+
+/*     var pantalla=document.getElementById('pantalla_dos')
+    var contenedor=document.getElementById('contenedor')
+
+    var comer=document.getElementById('comer')
+
+    comer.onclick=function(){
+        pantalla.innerHTML="<img id='nueva_feliz' src='../comunicate/img/opciones/comer.jpg' >"
+
+
+    }
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+   $(document).ready(function () {
+      $('#comer').click(function (event) {
+        $('#pantalla_dos').replaceWith("<img id='nueva_feliz' src='../comunicate/img/opciones/comer.jpg' >");       
+
+        })
+
+        $('#beber').click(function (event) {
+        $('#pantalla_dos').replaceWith("<img id='nuevo' src='../comunicate/img/opciones/beber.jpg' >");       
+
+        })
+        $('#caminar').click(function (event) {
+        $('#pantalla_dos').replaceWith("<img id='nuevo' src='../comunicate/img/opciones/caminar.jpg' >");       
+
+        })
+        $('#jugar').click(function (event) {
+        $('#pantalla_dos').replaceWith("<img id='nuevo' src='../comunicate/img/opciones/jugar.jpg' >");       
+
+        })
+        $('#higiene').click(function (event) {
+        $('#pantalla_dos').replaceWith("<img id='nuevo' src='../comunicate/img/opciones/higiene.jpg' >");       
+
+        })
+        $('#ropa').click(function (event) {
+        $('#pantalla_dos').replaceWith("<img id='nuevo' src='../comunicate/img/opciones/ropa.jpg' >");       
+
+        })
+    /*     $('#animales').click(function (event) {
+        $('#pantalla_dos').replaceWith("<img id='nuevo' src='../comunicate/img/opciones/animales.jpg' >");       
+
+        }) */
+        $('#utiles').click(function (event) {
+        $('#pantalla_dos').replaceWith("<img id='nuevo' src='../comunicate/img/opciones/utiles.png' >");       
+
+        })
+
+        //cambio de pagina
+                        $('#comer').click(function () {
+
+                $('#contenedor').load('megusta_comer.html')
+
+                })
+
+
+
+                $('#beber').click(function () {
+
+                $('#contenedor').load('megusta_beber.html')
+
+                })
+
+
+
+                $('#caminar').click(function () {
+
+                $('#contenedor').load('megusta_caminar.html')
+
+                })
+
+
+                $('#jugar').click(function () {
+
+                $('#contenedor').load('megusta_jugar.html')
+
+                })
+
+
+
+                $('#higiene').click(function () {
+
+                $('#contenedor').load('megusta_higiene.html')
+
+                })
+
+
+
+                $('#ropa').click(function () {
+
+                $('#contenedor').load('megusta_ropa.html')
+
+                })
+
+
+         /*        $('#animales').click(function () {
+
+                $('#contenedor').load('imagen.html')
+
+                })
+ */
+       
+
+
+
+
+        $('#utiles').click(function () {
+
+         $('#contenedor').load('megusta_utiles.html')
+
+         })
+
+
+
+
+
+
+
+      
+  }); 
+  
+  
+
+
+
+
+       
+
+
+
+
+
+</script>

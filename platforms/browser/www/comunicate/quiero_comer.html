@@ -1,0 +1,197 @@
+
+
+     
+
+<main id="contenedor" class="contenedor">
+    <img id="pan"  src="../aprendizaje/img/img_comida/pan.jpg" alt="">
+    <img id="galleta"  src="../aprendizaje/img/img_comida/galleta.jpg" alt="">
+    <img id="hamburguesa"  src="../aprendizaje/img/img_comida/hamburguesa.PNG" alt="">
+    <img id="caramelo"  src="../aprendizaje/img/img_comida/caramelo.gif" alt="">
+    <img id="arepa"  src="../aprendizaje/img/img_comida/arepa.png" alt="">
+    <img id="helado"  src="../aprendizaje/img/img_comida/helado.PNG" alt="">
+    <img id="pasta"  src="../aprendizaje/img/img_comida/pasta.png" alt="">
+    <img id="pizza"  src="../aprendizaje/img/img_comida/pizza.PNG" alt="">
+    <img id="queso"  src="../aprendizaje/img/img_comida/queso.PNG" alt="">
+    <img id="sopa"  src="../aprendizaje/img/img_comida/sopa.webp" alt="">
+</main>
+
+<div class="botones">
+    <input id="reproducir"  type="button" value="Comunicar" class="btn btn-success">
+ 
+</div>
+
+<script>
+
+    
+
+
+ 
+$(document).ready(function () {
+
+  var comer;
+
+      $('#pan').click(function (event) {
+        comer=1;
+        $('#pantalla_tres').replaceWith("<img id='nueva_feliz' src='../aprendizaje/img/img_comida/pan.jpg' >");       
+
+        })
+
+        $('#galleta').click(function (event) {
+          comer=2;
+        $('#pantalla_tres').replaceWith("<img id='nueva_triste' src='../aprendizaje/img/img_comida/galleta.jpg' >");       
+
+        })
+        $('#hamburguesa').click(function (event) {
+          comer=3;
+        $('#pantalla_tres').replaceWith("<img id='nueva_asustado' src='../aprendizaje/img/img_comida/hamburguesa.PNG' >");       
+
+        })
+        $('#caramelo').click(function (event) {
+          comer=4
+        $('#pantalla_tres').replaceWith("<img id='nueva_duele' src='../aprendizaje/img/img_comida/caramelo.gif' >");       
+
+        })
+        $('#arepa').click(function (event) {
+          comer=5
+        $('#pantalla_tres').replaceWith("<img id='nueva_enfadado' src='../aprendizaje/img/img_comida/arepa.png' >");       
+
+        })
+
+
+        $('#helado').click(function (event) {
+          comer=6
+        $('#pantalla_tres').replaceWith("<img id='nueva_feliz' src='../aprendizaje/img/img_comida/helado.PNG' >");       
+
+        })
+
+        $('#pasta').click(function (event) {
+          comer=7
+        $('#pantalla_tres').replaceWith("<img id='nueva_triste' src='../aprendizaje/img/img_comida/pasta.png' >");       
+
+        })
+        $('#pizza').click(function (event) {
+          comer=8
+        $('#pantalla_tres').replaceWith("<img id='nueva_asustado' src='../aprendizaje/img/img_comida/pizza.PNG' >");       
+
+        })
+        $('#queso').click(function (event) {
+          comer=9
+        $('#pantalla_tres').replaceWith("<img id='nueva_duele' src='../aprendizaje/img/img_comida/queso.PNG' >");       
+
+        })
+        $('#sopa').click(function (event) {
+          comer=10
+        $('#pantalla_tres').replaceWith("<img id='nueva_enfadado' src='../aprendizaje/img/img_comida/sopa.webp' >");       
+
+        })
+        $('#reproducir').click(function () {
+
+        $('#contenedor').load('play.html')
+
+        })
+
+
+
+        $('#reproducir').click(function(event){
+
+          var pan= new Audio();
+            pan.src="../comunicate/sonidos/comida/panq.wav";
+          var galleta= new Audio();
+            galleta.src="../comunicate/sonidos/comida/galletaq.wav";
+          var hamburguesa= new Audio();
+            hamburguesa.src="../comunicate/sonidos/comida/hamburguesaq.wav";
+          var caramelo= new Audio();
+            caramelo.src="../comunicate/sonidos/comida/carameloq.wav";
+          var arepa= new Audio();
+            arepa.src="../comunicate/sonidos/comida/arepaq.wav";
+          var pasta= new Audio();
+            pasta.src="../comunicate/sonidos/comida/pastaq.wav";
+          var pizza= new Audio();
+            pizza.src="../comunicate/sonidos/comida/pizzaq.wav";
+          var queso= new Audio();
+            queso.src="../comunicate/sonidos/comida/quesoq.wav";
+          var helado= new Audio();
+            helado.src="../comunicate/sonidos/comida/heladoq.wav";
+          var sopa= new Audio();
+            sopa.src="../comunicate/sonidos/comida/sopaq.wav";
+          
+         
+
+
+switch (comer) {
+
+        case 1:
+            pan.play()
+        
+            break;
+            case 2:
+                galleta.play()
+            
+            break;
+            case 3:
+                hamburguesa.play()
+           
+            
+
+            break;
+            case 4:
+                caramelo.play()
+            
+        
+            break;
+            case 5:
+                arepa.play()
+            
+
+            break;
+
+            case 6:
+            helado.play()
+        
+            break;
+            case 7:
+                pasta.play()
+            
+            break;
+            case 8:
+                pizza.play()
+           
+            
+
+            break;
+            case 9:
+                queso.play()
+            
+        
+            break;
+            case 10:
+                sopa.play()
+            
+
+            break;
+    
+          }
+        })
+          
+  
+
+
+
+
+
+
+
+      
+  }); 
+ 
+
+
+
+
+
+
+
+       
+
+
+</script>

@@ -4,6 +4,7 @@
 }
 body{
     margin: auto;
+
 }
 #navegador{
     background-color: #78C2AD;
@@ -29,7 +30,9 @@ body{
 .pantalla{
 
     border: dashed black;
-    margin: 0 5px 15px 5px;
+    margin: 0 5px 2px 5px;
+    font-size: 20px;
+   
 }
 
 #contenedor{
@@ -79,3 +82,21 @@ img{
     width: 80px;
     height: 80px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     

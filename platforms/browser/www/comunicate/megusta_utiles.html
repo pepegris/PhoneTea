@@ -1,0 +1,142 @@
+
+
+     
+
+<main id="contenedor" class="contenedor">
+    <img id='lapiz' src='../aprendizaje/img/img_escolar/lapiz.png' >
+    <img id='mochila' src='../aprendizaje/img/img_escolar/mochila.jpg' >
+    <img id='papel' src='../aprendizaje/img/img_escolar/papel.jpg' >
+
+    <img id='pega' src='../aprendizaje/img/img_escolar/pega.jpg' >
+    <img id='pintar' src='../aprendizaje/img/img_escolar/pintar.jpg' >
+    <img id='tijeras' src='../aprendizaje/img/img_escolar/tijeras.jpg' >
+
+   
+
+
+</main>
+
+<div class="botones">
+    <input id="reproducir"  type="button" value="Comunicar" class="btn btn-success">
+ 
+</div>
+
+
+
+<script>
+
+
+
+
+
+   $(document).ready(function () {
+
+    var sonido;
+      $('#lapiz').click(function (event) {
+        $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_escolar/lapiz.png' >");       
+        sonido=1;
+        })
+
+        $('#mochila').click(function (event) {
+        $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_escolar/mochila.jpg' >");       
+        sonido=2;
+        })
+
+        $('#papel').click(function (event) {
+        $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_escolar/papel.jpg' >");       
+        sonido=3;
+        })
+       
+        $('#pega').click(function (event) {
+        $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_escolar/pega.jpg' >");       
+        sonido=4;
+        })
+
+        $('#pintar').click(function (event) {
+        $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_escolar/pintar.jpg' >");       
+        sonido=5;
+        })
+
+        
+        $('#tijeras').click(function (event) {
+        $('#pantalla_tres').replaceWith("<img  src='../aprendizaje/img/img_escolar/tijeras.jpg' >");       
+        sonido=6;
+        })
+       
+       
+
+        $('#reproducir').click(function () {
+
+        $('#contenedor').load('play.html')
+      
+        })
+
+
+
+
+        /* REPDUCION DE SONIDOS  */
+        $('#reproducir').click(function(){
+            
+          var lapiz= new Audio();
+            lapiz.src="../comunicate/sonidos/utiles/lapiz.wav";
+
+          var mochila= new Audio();
+            mochila.src="../comunicate/sonidos/utiles/mochila.wav";
+
+          var papel= new Audio();
+            papel.src="../comunicate/sonidos/utiles/papel.wav";
+
+          var pega= new Audio();
+            pega.src="../comunicate/sonidos/utiles/pega.wav";
+
+            var pintar= new Audio();
+            pintar.src="../comunicate/sonidos/utiles/pintar.wav";
+
+            var tijera= new Audio();
+            tijera.src="../comunicate/sonidos/utiles/tijera.wav";
+
+       
+       
+
+
+            switch (sonido) {
+                case 1:
+                        lapiz.play()
+                    break;
+                    case 2:
+                        mochila.play()
+                    break;
+                    case 3:
+                        papel.play()
+                    break;
+                    case 4:
+                        pega.play()
+                    break;
+                    case 5:
+                        pintar.play()
+                    break;
+                    case 6:
+                        tijera.play()
+                    break;
+                  
+            
+               
+            }
+         
+
+
+
+        })
+    
+});
+
+
+
+
+
+
+
+       
+
+
+</script>

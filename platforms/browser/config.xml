@@ -6,7 +6,7 @@
     <feature name="Device">
         <param name="browser-package" value="Device" />
     </feature>
-    <name>phonegap_tea</name>
+    <name>PhoneTea</name>
     <description>BETA Aplicacion didactica para niños autistas</description>
     <author email="salcedop816@gmail.com" href="https://github.com/">Edgar Andres Salcedo</author>
     <content src="index.html" />
