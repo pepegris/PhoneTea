@@ -93,9 +93,7 @@ a{
     transform: translateY(calc(100% * 8));
 }
 
-.item:nth-of-type(10):hover ~ .back-menu{
-    transform: translateY(calc(100% * 9));
-}
+
 
 
 

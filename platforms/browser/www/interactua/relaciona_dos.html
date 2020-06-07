@@ -95,7 +95,7 @@
     
     <script src="../javascript/jquery-3.4.1.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../interactua/js/showToolTip.js"></script>
+    <script src="../interactua/js/showToolTip_dos.js"></script>
     <script src="../interactua/js/main.js"></script>
     
     <script>
@@ -126,13 +126,15 @@
   
   </script>
 
-  <!--MAIN.JS-->
+  <!--SONIDO-->
  
   <script>
     var sonido= new Audio();
-           sonido.src="correcto.mp3";
+           sonido.src="correctoo.wav";
+           $('.activate').click(function(){
+               sonido.play()
+           })
      </script>
-
     
 </body>
 </html>

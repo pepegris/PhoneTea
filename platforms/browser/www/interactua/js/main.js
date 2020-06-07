@@ -12,7 +12,7 @@ $(document).ready(function(){
 
     // attach tooltip to the host element as the last child
     $(this).append(` 
-    <div class="tooltip" id="cuadro">
+    </center><div class="tooltip" id="cuadro">
     <div class="tooltip-content" id="contiene">
       <div class="tooltip-header" id="cabeza=>
       ${config.title}
@@ -22,7 +22,7 @@ $(document).ready(function(){
       </div>
     </div>
     <div class="tooltip-action" id="accion">
-      <button class="tooltip-btn"  id="boton" >okey</button>
+      <button class="tooltip-btn"  id="boton" >OK</button>
     </div>
   </div>
     `);
@@ -44,7 +44,7 @@ $(document).ready(function(){
     // determine if there is enough space to the TOP of element to place tooltip at the TOP 
     if (parentInf.top > tooltipInf.height + 10) { 
       $('#cuadro')
-        .css({ left: '50%', marginLeft: -($('#cuadro').outerWidth() / 2) + 'px', top: -(tooltipInf.height) + 'px' })
+        .css({ left: '100%', marginLeft: -($('#cuadro').outerWidth() / 2) + 'px', top: -(tooltipInf.height) + 'px' })
         .animate({ top: -(tooltipInf.height + 10) + 'px', opacity: 1 });
 
     // determine if there is enough space to the BOTTOM of element to place tooltip at the BOTTOM 
