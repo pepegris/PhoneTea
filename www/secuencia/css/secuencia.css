@@ -15,12 +15,11 @@
   
   .respuesta{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-  
-    
-  
+
     
   }
   
@@ -43,19 +42,29 @@
   
   footer h3{
     margin-top: 20px;
-    width: 50%;
+    width: 70%;
     text-decoration: underline;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 0 black;
     
   }
   
   .img{
     width: 70%;
+    border-radius:10px;
+    border: solid black;
   }
 
   #secuencia{
       margin-top: 60px;
+      
   }
 
   #secuencia button{
       margin-top: 80px;
+  }
+  #img{
+    width: 120px;
+    height: 120px;
   }
