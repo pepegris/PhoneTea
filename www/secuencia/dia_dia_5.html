@@ -23,36 +23,19 @@
 <main id="fullpage">
 
     <div id="secuencia">
-      <center><h2>COMPLETA</h2></center>
+      <center><h2>SECUENCIA TEMPORAL</h2></center>
       <center>
-          <img class="img" src="../secuencia/imagenes de interactura_relaciona/Nueva carpeta/montarse_carro_completa.jpg" alt="">
+          <img class="img" src="../secuencia/imagenes de interactura_relaciona/despertarse/prepararse.jpg" alt="">
          
       </center>
+      <center><button class="btn btn-success" onclick="location.href='../secuencia/dia_dia_6.html'" >Siguiente</button></center>
       
   
   </div>
-  <div class="respuesta">
-  
-    <div  id="respuesta_1" >
-    <center><H5 id="text">Bañarse</H5>
-        <img id="img" src="../aprendizaje/img/img_higiene/bañar.jpg" class="rounded mx-auto d-block "  alt="" onclick="config()"  >
-          <button class="btn btn-warning" id="activate">1</button>
-      </center>
-    
-    
-    </div>
-    <div   id="respuesta_2">
-   <center> <H5 class="text">Lavarse las manos</H5>
-    <img  id="img" src="../aprendizaje/img/img_higiene/manos.png" class="rounded mx-auto d-block" alt="" >
-     <button onclick="sonido.play()" class="activate btn btn-warning" >2</button></center>
-     
-    </div>
-    
-    </div>
 
 <footer >
   
-      <center><h3>¿Que falta?</h3></center>
+      <center><h3>Prepararse a salir</h3></center>
 
 </footer>
 
@@ -67,52 +50,7 @@
  -->
 
 
-    <script src="../javascript/jquery-3.4.1.min.js" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../secuencia/js/showToolTip.js"></script>
-    <script src="../secuencia/js/main.js"></script>
-
-
-
-
-
-
-    <script>
-      $('.activate').click(function () {
-      $('.text').showToolTip({
-        title: 'CORRECTO',
-        content: 'Muy bien',
-        onApprove: function(){
-          console.log('OK is clicked!');
-        }
-      });
-    });
-  </script>
-  </div>
-  <script type="text/javascript">
-  
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-36251023-1']);
-    _gaq.push(['_setDomainName', 'jqueryscript.net']);
-    _gaq.push(['_trackPageview']);
-  
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  
-  </script>
-
-  <!--SONIDO-->
- 
-  <script>
- var sonido= new Audio();
-        sonido.src="correctoo.wav";
-        $('.activate').click(function(){
-            sonido.play()
-        })
-  </script>
+   
 
     
 </body>
