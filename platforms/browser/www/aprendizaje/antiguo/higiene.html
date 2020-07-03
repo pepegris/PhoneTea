@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Higiene</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../aprendizaje/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="../aprendizaje/css/slick-theme.css">
+  <link rel="stylesheet" href="../css/modulos.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+
+  
+  
+</head>
+<body >
+ 
+    <center><h1>Higiene</h1></center>
+  <section class="lazy slider" data-sizes="50vw"> 
+    <div > 
+      <img style="height: 140px;" id="playpausebtn" data-lazy="../aprendizaje/img/img_higiene/bañar.jpg" data-srcset="../aprendizaje/img/img_higiene/bañar.jpg 650w, ../aprendizaje/img/img_higiene/bañar.jpg 160w" >
+     <center>
+       <br>
+       <h2 class="btn btn-success" onclick="sonido.play()"><b>Bañar</b></h2>
+       
+      
+                <!--<button  class="btn btn-warning" id="contenedor" onclick="carga_sonido()" onclick="DootDown()"> <h2><b>Buho</b></h2>   </button>-->
+      </center> 
+   
+    </div>
+    <div>
+      <img style="height: 140px;" data-lazy="../aprendizaje/img/img_higiene/baño.png" data-srcset="../aprendizaje/img/img_higiene/baño.png 650w, ../aprendizaje/img/img_higiene/baño.png 960w" data-sizes="100vw"  >
+      <center>
+        <br>
+        <h2 class="btn btn-success"  onclick="sonido_2.play()"><b>Baño</b></h2>
+      </center>
+    </div>
+    <div> 
+      <img data-lazy="../aprendizaje/img/img_higiene/cepillarse.jpg"   data-srcset=" ../aprendizaje/img/img_higiene/cepillarse.jpg 650w,../aprendizaje/img/img_higiene/cepillarse.jpg  960w" data-sizes="100vw">
+      <center>
+        <br>
+        <h2 class="btn btn-success" onclick="sonido_6.play()"><b>Cepillarse</b></h2>
+        
+      </center>
+    </div>
+    <div>
+      <img style="height: 140px;" data-lazy="../aprendizaje/img/img_higiene/jabon.jpg"  data-srcset=" ../aprendizaje/img/img_higiene/jabon.jpg 650w, ../aprendizaje/img/img_higiene/jabon.jpg 960w" data-sizes="100vw">
+      <center>
+        <br>
+        <h2 class="btn btn-success" onclick="sonido_4.play()"><B>Jabon</B></h2>
+      </center>
+    </div>
+    <div> 
+      <img data-lazy="../aprendizaje/img/img_higiene/manos.png"  data-srcset="../aprendizaje/img/img_higiene/manos.png 650w, ../aprendizaje/img/img_higiene/manos.png 960w" data-sizes="100vw">
+      <center>
+        <br>
+        <h2 class="btn btn-success" onclick="sonido_3.play()"><b>Lavar Manos</b></h2>
+      </center>
+    </div>
+    <div> 
+      <!-- esta slide  debe heredar los tamaños attr del slider principal -->
+      <img data-lazy="../aprendizaje/img/img_higiene/secar.png"  data-srcset="../aprendizaje/img/img_higiene/secar.png 650w, ../aprendizaje/img/img_higiene/secar.png 960w">
+      <center>
+        <br>
+        <h2 class="btn btn-success" onclick="sonido_5.play()"><b>Secar Manos</b></h2>
+      </center>
+    </div>
+    <div> 
+        
+        <img data-lazy="../aprendizaje/img/img_higiene/toalla.jpg"  data-srcset="../aprendizaje/img/img_higiene/toalla.jpg 650w, ../aprendizaje/img/img_higiene/toalla.jpg 960w">
+        <center>
+          <br>
+          <h2 class="btn btn-success" onclick="sonido_6.play()"><b>Toalla</b></h2>
+        </center>
+      </div>
+
+      <div> 
+        
+        <img data-lazy="../aprendizaje/img/img_higiene/nariz.png"  data-srcset="../aprendizaje/img/img_higiene/nariz.png 650w, ../aprendizaje/img/img_higiene/nariz.png 960w">
+        <center>
+          <br>
+          <h2 class="btn btn-success" onclick="sonido_7.play()"><b>Limpiar Nariz</b></h2>
+        </center>
+      </div>
+
+      
+       
+       
+
+
+
+  </section>
+  <br>
+  <div class="salida">
+    <center><button type="button" class="btn btn-light" id="boton_exit" onclick="location.href='../aprendizaje/utiles_escolares.html'" ><h3>  Siguiente </h3></button></center>
+    <br>
+    <center><button type="button" class="btn btn-light" id="boton_exit" onClick="location.href='../index.html'" ><h3>  Salir  </h3></button></center>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="../javascript/jquery-3.4.1.min.js" charset="utf-8"></script>
+<script src="../javascript/jquery-2.2.0.min.js"></script>
+  <script src="../javascript/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../javascript/aslider.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      $(".vertical-center-4").slick({
+        dots: true,
+        vertical: true,
+        centerMode: true,
+        slidesToShow: 4,
+        slidesToScroll: 2
+      });
+     
+      $(".vertical-center-2").slick({
+        dots: true,
+        vertical: true,
+        centerMode: true,
+        slidesToShow: 2,
+        slidesToScroll: 2
+      });
+      $(".vertical-center").slick({
+        dots: true,
+        vertical: true,
+        centerMode: true,
+      });
+      $(".vertical").slick({
+        dots: true,
+        vertical: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+      $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+      $(".center").slick({
+        dots: true,
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 5,
+        slidesToScroll: 3
+      });
+      $(".variable").slick({
+        dots: true,
+        infinite: true,
+        variableWidth: true
+      });
+      $(".lazy").slick({
+        lazyLoad: 'ondemand', // ondemand progressive anticipated
+        infinite: true
+      });
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</script>
+
+<script>
+
+    //en este son nueve (9) sonidos
+    var sonido= new Audio();
+        sonido.src="../aprendizaje/sonidos/animales/buho.mp3";
+
+        
+        var sonido_2= new Audio();
+        sonido_2.src="../aprendizaje/sonidos/animales/cerdo.mp3";
+        
+        var sonido_3= new Audio();
+        sonido_3.src="../aprendizaje/sonidos/animales/foca.mp3";
+
+        var sonido_4= new Audio();
+        sonido_4.src="../aprendizaje/sonidos/animales/perro.mp3";
+
+        var sonido_5= new Audio();
+        sonido_5.src="../aprendizaje/sonidos/animales/rinoceronte.mp3";
+
+        
+        var sonido_6= new Audio();
+        sonido_6.src="../aprendizaje/sonidos/animales/conejo.mp3";
+</script>
+
+
+
+</body>
+</html>
