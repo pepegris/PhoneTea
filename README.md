@@ -5,3 +5,5 @@ app mobile Picture Exchange communication system
                   con el objetivo de ayudar a los padres 
                   en enseñar a los niños a comunicarse 
                   por medio de esta aplicació
+                  
+Esta aplicacion fue elaborada con apache cordova 
