@@ -5,6 +5,7 @@
 
 body{
  background-image: url('fondo_2.jpg') ;
+ background-position: center;
 
 background-size: cover;
 
