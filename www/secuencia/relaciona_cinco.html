@@ -18,7 +18,7 @@
 <!--neuvo-->
 </head>
 <style>
-    #inicio{
+  #inicio{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -27,10 +27,15 @@
     
     height: 100px;
   }
+
+
+
+
 </style>
-<body > 
+<body> 
+
   <nav>
-    <center><h3>Comprar Comida</h3></center>
+    <center><h3>Manejar Bicicleta</h3></center>
   </nav>
 
 
@@ -38,33 +43,38 @@
 
 <main>
   
-  <div>
-   
+  <div id="inicio">
+    
     <center>
-      <img src="../secuencia/imagenes de interactura_relaciona/secuencia_4/1.PNG" alt="">
-      <img src="../secuencia/imagenes de interactura_relaciona/secuencia_4/2.PNG" alt="">
-      <img src="../secuencia/imagenes de interactura_relaciona/secuencia_4/3.PNG" alt="">
+      <img src="../secuencia/imagenes de interactura_relaciona/secuencia_5/paso_1.png" alt="">
+      <img src="../secuencia/imagenes de interactura_relaciona/secuencia_5/paso_2.png" alt="">
+      <img src="../secuencia/imagenes de interactura_relaciona/secuencia_5/paso_3.png" alt="">
       
 
     </center>
 
 </div>
 
-<center><h5>¿Como se sentirá la niña?</h5></center>
+<center><h5>¿Como se sentirá el niño?</h5></center>
 
 <div class="respuesta">
   <div id="respuesta_1"  >
-    <center><H5 id="text">Triste</H5></center>
-      <img src="../secuencia/imagenes de interactura_relaciona/secuencia_4/triste.png" class="rounded mx-auto d-block "  alt="" onclick="config()"  >
-      <center>  <button class="btn btn-warning" id="activate">Triste</button></center>
+    <center><H5 class="text">Triste</H5></center>
+    <img src="../secuencia/imagenes de interactura_relaciona/secuencia_5/correcto.png" class="rounded mx-auto d-block "  alt="" onclick="config()"  >
+    <center>  <button onclick="sonido.play()" class="activate btn btn-warning">1</button></center>
+
+    
 
 
     </div>
 <div id="respuesta_2">
 
-    <center><H5 class="text">Feliz</H5></center>
-      <img id="sorprendido" src="../secuencia/imagenes de interactura_relaciona/secuencia_4/feliz.PNG" class="rounded mx-auto d-block" alt="" >
-      <center> <button onclick="sonido.play()" class="activate btn btn-warning">feliz</button></center>
+  <center><H5 id="text">Feliz</H5></center>
+  <img id="sorprendido" src="../secuencia/imagenes de interactura_relaciona/secuencia_5/incorrecto.png" class="rounded mx-auto d-block" alt="" >
+
+  <center> <button class="btn btn-warning" id="activate" >2</button></center>
+
+    
     
 
 
@@ -88,8 +98,8 @@
 
     
     <script src="../javascript/jquery-3.4.1.min.js" charset="utf-8"></script>
-   
-    <script src="../secuencia/js/showToolTip_cuatro.js"></script>
+
+    <script src="../secuencia/js/ventana_emergente_secuencia/showToolTip_tres.js"></script>
     <script src="../secuencia/js/main.js"></script>
     
     <script>
