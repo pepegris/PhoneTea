@@ -29,12 +29,12 @@ img{
     
 }
 /* ICONO DE TRASLADAR PARA ABAJO */
-.icono #icono{
+#icono{
     font-weight: 700;
-    color: rgb(0, 0, 0);
+    color: black;
 
 }
-.icono #icono{
+#icono{
     position: absolute;
     z-index: 99;
     bottom: 3px;
@@ -51,4 +51,9 @@ img{
     100% {transform: translateY(17px);}
 }
 
+/*BOTON DE SALIDA*/
+
+.salida{
+    position: fixed;
+}
 

@@ -105,7 +105,7 @@ document.getElementById('quiero').addEventListener('click',add_imagen_quiero,fal
 
 function add_imagen_quiero(){
 
-    $('#pantalla_uno').replaceWith("<img id='nueva_primera' src='../comunicate/img/quiero.png' >");
+    $('#pantalla_uno').replaceWith("<img id='nueva_primera' src='../comunicate/img/si.jpg' >");
 
 }
 
@@ -129,7 +129,7 @@ document.getElementById('noQuiero').addEventListener('click',add_imagen_no_quier
 
 function add_imagen_no_quiero(){
 
-    $('#pantalla_uno').replaceWith("<img id='nueva_primera' src='../comunicate/img/no quiero.png' >");
+    $('#pantalla_uno').replaceWith("<img id='nueva_primera' src='../comunicate/img/no.jpg' >");
 
 }
 
