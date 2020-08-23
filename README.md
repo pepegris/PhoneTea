@@ -6,4 +6,4 @@ app mobile Picture Exchange communication system
                   en enseñar a los niños a comunicarse 
                   por medio de esta aplicació
                   
-Esta aplicacion fue elaborada con apache cordova 
+Esta aplicacion fue elaborada con javascript, jquery y cordova 
